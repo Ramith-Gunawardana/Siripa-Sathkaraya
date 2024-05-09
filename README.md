@@ -1,16 +1,16 @@
-# siripa_sathkaraya
+# Siripa Sathkaraya
 
-A mobile application for Sri Pada pilgrims
+A mobile application for Sri Pada pilgrims.
+Powered by Flutter.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<img src="screenshots/icon.png" height="200">
+<img src="screenshots/phone1.png" height="500">
+<img src="screenshots/phone2.png" height="500">
+<img src="screenshots/phone3.png" height="500">
+<img src="screenshots/phone4.png" height="500">
+<img src="screenshots/phone5.png" height="500">
+<img src="screenshots/phone6.png" height="500">
+<img src="screenshots/phone7.png" height="500">
+<img src="screenshots/phone8.png" height="500">
+<img src="screenshots/phone9.png" height="500">
