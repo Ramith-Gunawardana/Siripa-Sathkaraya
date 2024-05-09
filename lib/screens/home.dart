@@ -14,6 +14,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   //list of screens
   final List<Widget> screenList = <Widget>[
     const KaviScreen(),
@@ -36,8 +38,21 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _openDrawerOnStart();
+  }
+
+  void _openDrawerOnStart() {
+    Future.delayed(const Duration(seconds: 1), () {
+      _scaffoldKey.currentState!.openDrawer();
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor:
           MediaQuery.of(context).platformBrightness == Brightness.light
               ? kLightBlue

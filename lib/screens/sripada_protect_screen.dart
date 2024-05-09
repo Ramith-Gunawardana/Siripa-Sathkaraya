@@ -136,17 +136,11 @@ class _SriPadaProtectScreenState extends State<SriPadaProtectScreen> {
           const SizedBox(
             height: 16,
           ),
-          SizedBox(
-            height: 52,
-            child: FilledButton.icon(
-              onPressed: _launchUrl,
-              icon: const Icon(Icons.download_outlined),
-              label: const Text(
-                'Download Free Book about Sri Pada by\nRev. Karamatiye Rathanapala Thero',
-                style: TextStyle(
-                  fontSize: 16,
-                ),
-              ),
+          FilledButton.icon(
+            onPressed: _launchUrl,
+            icon: const Icon(Icons.download_outlined),
+            label: const Text(
+              'ශ්‍රී පාදය පිළිබඳ රචිත ග්‍රන්ථය බාගත කරන්න',
             ),
           ),
           const SizedBox(
