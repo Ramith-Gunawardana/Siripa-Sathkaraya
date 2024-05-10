@@ -12,6 +12,7 @@ class _GaathaScreenState extends State<GaathaScreen> {
   Widget build(BuildContext context) {
     //screen width
     double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
 
     return Padding(
       padding: const EdgeInsets.only(
@@ -20,6 +21,7 @@ class _GaathaScreenState extends State<GaathaScreen> {
       ),
       child: SizedBox(
         width: screenWidth,
+        height: screenHeight,
         child: const SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,

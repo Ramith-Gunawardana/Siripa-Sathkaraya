@@ -134,7 +134,7 @@ class _SriPadaProtectScreenState extends State<SriPadaProtectScreen> {
             ),
           ),
           const SizedBox(
-            height: 16,
+            height: 8,
           ),
           FilledButton.icon(
             onPressed: _launchUrl,
