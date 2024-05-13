@@ -52,7 +52,7 @@ class _SriPadaProtectScreenState extends State<SriPadaProtectScreen> {
         children: [
           //kavi pages
           SizedBox(
-            height: screenHeight * 0.7,
+            height: screenHeight * 0.75,
             child: PageView.builder(
               controller: pageController,
               itemCount: contents.length,
@@ -62,46 +62,51 @@ class _SriPadaProtectScreenState extends State<SriPadaProtectScreen> {
                 });
               },
               itemBuilder: (_, i) {
-                return SingleChildScrollView(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      //kavi content
-                      Text(
-                        contents[i].content,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20,
-                          height: 1.5,
+                return Scrollbar(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        //kavi content
+                        Text(
+                          contents[i].content,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20,
+                            height: 1.5,
+                          ),
+                          textAlign: TextAlign.start,
                         ),
-                        textAlign: TextAlign.start,
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      //author
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          const SizedBox(
-                            width: 16,
-                          ),
-                          Text(
-                            contents[i].author,
-                            style: const TextStyle(
-                              fontSize: 18,
-                              height: 1.4,
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        //author
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            const SizedBox(
+                              width: 16,
                             ),
-                            textAlign: TextAlign.start,
-                          ),
-                        ],
-                      ),
-                    ],
+                            Text(
+                              contents[i].author,
+                              style: const TextStyle(
+                                fontSize: 18,
+                                height: 1.4,
+                              ),
+                              textAlign: TextAlign.start,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
             ),
+          ),
+          const SizedBox(
+            height: 8,
           ),
           //dots
           Row(
@@ -141,6 +146,9 @@ class _SriPadaProtectScreenState extends State<SriPadaProtectScreen> {
             icon: const Icon(Icons.download_outlined),
             label: const Text(
               'ශ්‍රී පාදය පිළිබඳ රචිත ග්‍රන්ථය බාගත කරන්න',
+              style: TextStyle(
+                fontSize: 16,
+              ),
             ),
           ),
           const SizedBox(

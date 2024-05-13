@@ -59,10 +59,15 @@ class _KaviScreenState extends State<KaviScreen> {
               //get individual song
               final Song song = playlist[index];
 
-              return ListTile(
-                title: Text(song.songName),
-                leading: const Icon(Icons.music_note_outlined),
-                onTap: () => goToSong(index),
+              return Material(
+                type: MaterialType.transparency,
+                child: InkWell(
+                  child: ListTile(
+                    title: Text(song.songName),
+                    leading: const Icon(Icons.music_note_outlined),
+                    onTap: () => goToSong(index),
+                  ),
+                ),
               );
             },
           ),

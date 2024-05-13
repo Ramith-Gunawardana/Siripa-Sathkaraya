@@ -25,7 +25,16 @@ class _MapScreenState extends State<MapScreen> {
       width: screenWidth,
       child: Column(
         children: [
-          DropdownButton<int>(
+          DropdownButtonFormField<int>(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(40),
+              ),
+            ),
+            padding: const EdgeInsets.only(
+              left: 16,
+              right: 16,
+            ),
             items: const [
               DropdownMenuItem(value: 0, child: Text('නල්ලතන්නිය මාර්ගය')),
               DropdownMenuItem(value: 1, child: Text('එරත්න මාර්ගය')),
