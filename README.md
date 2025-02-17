@@ -14,14 +14,17 @@ Developed for the project in collaboration with various clubs of General Sir Joh
 
 ## Download
 
-Download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=github.io.ramith_gunawardana.siripa_sathkaraya.siripa_sathkaraya)
+Download Siripa Sathkaraya app from the [Google Play Store](https://play.google.com/store/apps/details?id=github.io.ramith_gunawardana.siripa_sathkaraya.siripa_sathkaraya)
+
+## Getting Started
 
 ## Prerequisites
 
 - [Flutter](https://flutter.dev/docs/get-started/install)
 - [Dart](https://dart.dev/get-dart)
+- Android Studio or VS Code for Android development or Xcode for iOS development
 
-## Installation
+### Installation
 
 1. Clone the repository:
     ```sh
@@ -36,14 +39,14 @@ Download the app from the [Google Play Store](https://play.google.com/store/apps
     flutter pub get
     ```
 
-## Running the App
+### Running the App
 
 To run the app on an emulator or a physical device, use the following command:
 ```sh
 flutter run
 ```
 
-## Building the App
+### Building the App
 
 To build the app for Android and iOS, use the following commands:
  - Android:
